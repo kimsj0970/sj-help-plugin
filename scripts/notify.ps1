@@ -32,8 +32,13 @@ $xmlString = @"
 </toast>
 "@
 
+# Windows Runtime 어셈블리 로드 (3개 모두 필요)
+[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType=WindowsRuntime] > $null
+[Windows.UI.Notifications.ToastNotification,        Windows.UI.Notifications, ContentType=WindowsRuntime] > $null
+[Windows.Data.Xml.Dom.XmlDocument,                  Windows.Data.Xml.Dom,    ContentType=WindowsRuntime] > $null
+
 # Toast 발송
-[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType=WindowsRuntime] | Out-Null
 $doc = New-Object Windows.Data.Xml.Dom.XmlDocument
 $doc.LoadXml($xmlString)
-[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Claude Code").Show([Windows.UI.Notifications.ToastNotification]::new($doc))
+$toast = [Windows.UI.Notifications.ToastNotification]::new($doc)
+[Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier("Claude Code").Show($toast)

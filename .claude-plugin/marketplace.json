@@ -7,7 +7,7 @@
     {
       "name": "sj-help-plugin",
       "source": "./",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "description": "스프링 부트 DDD 및 안전 가드레일 플러그인"
     }
   ]
