@@ -4,22 +4,5 @@
     "description": "스프링 부트 DDD 및 안전 가드레일 플러그인",
     "author": {
         "name": "kimsj0970"
-    },
-    "commands": [
-        {
-            "name": "auto-commit",
-            "description": "스테이징된 파일들을 각각 분석하여 개별 커밋합니다.",
-            "entrypoint": "commands/auto-commit.md"
-        },
-        {
-            "name": "security-review",
-            "description": "변경된 코드의 보안 취약점을 전문가 수준에서 검토합니다.",
-            "entrypoint": "commands/security-review.md"
-        },
-        {
-            "name": "test-orchestration",
-            "description": "테스트할 파일을 입력받아 전문 테스트 에이전트를 호출해 JUnit 5 테스트 코드를 자동 생성합니다.",
-            "entrypoint": "commands/test-orchestration.md"
-        }
-    ]
+    }
 }
