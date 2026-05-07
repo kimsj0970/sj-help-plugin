@@ -1,0 +1,7 @@
+# AI가 절대 읽지 말아야 할 파일/폴더 목록
+node_modules/
+.git/
+build/
+dist/
+*.log
+.env

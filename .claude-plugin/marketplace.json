@@ -1,0 +1,14 @@
+{
+  "name": "sj-help",
+  "owner": {
+    "name": "kimsj0970"
+  },
+  "plugins": [
+    {
+      "name": "sj-help-plugin",
+      "source": "./",
+      "version": "0.1.0",
+      "description": "스프링 부트 DDD 및 안전 가드레일 플러그인"
+    }
+  ]
+}
