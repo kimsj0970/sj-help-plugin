@@ -15,6 +15,7 @@
 | `/security-review` | OWASP Top 10 기준으로 변경 코드 보안 취약점 리뷰 |
 | `/test-orchestration <파일경로>` | Spring 컴포넌트 분석 후 JUnit 5 테스트 코드 자동 생성·검증 |
 | **상시 적용 규칙** | `rm -rf`, `DROP TABLE`, `git push --force` 등 위험 명령어 자동 차단 + DDD 코드 컨벤션 강제 |
+| **🔔 데스크탑 알림** | 작업 완료 / 사용자 승인 필요 시 Windows Toast 알림 (고양이 아이콘 포함) |
 
 ---
 
@@ -35,6 +36,20 @@ Claude Code에서 한 번만 실행:
 ```bash
 curl -s https://raw.githubusercontent.com/kimsj0970/sj-help-plugin/main/scripts/setup.sh | bash
 ```
+
+### 선택: 데스크탑 알림 활성화 (Windows + WSL)
+작업 완료 / 승인 요청 시 우측 하단 토스트 알림을 받으려면 **BurntToast PowerShell 모듈**을 한 번만 설치하세요. WSL bash에서:
+
+```bash
+powershell.exe -ExecutionPolicy Bypass -Command "Install-Module -Name BurntToast -Scope CurrentUser -Force -SkipPublisherCheck"
+```
+
+설치 후 별도 작업 없이 자동으로 동작합니다. 설치 안 하면 알림만 건너뛰고 다른 기능은 정상 동작합니다.
+
+#### 알림 아이콘 변경
+기본은 고양이(`assets/cat.jpg`)입니다. 본인 이미지로 바꾸려면 이 저장소를 fork한 뒤 **같은 위치·같은 파일명**(`assets/cat.jpg`)으로 교체하고 본인 마켓플레이스에서 install하세요.
+- 권장 사이즈: 200×200px 정사각형 PNG/JPG
+- 파일 크기: 500KB 이하
 
 ---
 
