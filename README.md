@@ -23,7 +23,7 @@
 Claude Code에서 한 번만 실행:
 
 ```
-/plugin marketplace add kimsj0970/sj-help-main
+/plugin marketplace add kimsj0970/sj-help-plugin
 /plugin install sj-help-plugin@sj-help
 ```
 
@@ -33,7 +33,7 @@ Claude Code에서 한 번만 실행:
 `.env` 파일 커밋 경고 훅과 `.claudeignore`를 셋업하려면, 대상 프로젝트 루트에서:
 
 ```bash
-curl -s https://raw.githubusercontent.com/kimsj0970/sj-help-main/main/scripts/setup.sh | bash
+curl -s https://raw.githubusercontent.com/kimsj0970/sj-help-plugin/main/scripts/setup.sh | bash
 ```
 
 ---
@@ -79,4 +79,4 @@ MIT License — 자유롭게 사용·수정·배포 가능합니다.
 
 ## 🤝 기여
 
-이슈와 PR을 환영합니다. 버그 제보나 기능 제안은 [Issues](https://github.com/kimsj0970/sj-help-main/issues)에 남겨주세요.
+이슈와 PR을 환영합니다. 버그 제보나 기능 제안은 [Issues](https://github.com/kimsj0970/sj-help-plugin/issues)에 남겨주세요.

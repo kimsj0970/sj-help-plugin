@@ -98,7 +98,7 @@ git push
   "name": "sj-help-plugin",
   "source": {
     "source": "github",
-    "repo": "kimsj0970/sj-help-main"
+    "repo": "kimsj0970/sj-help-plugin"
   },
   "version": "0.1.0"
 }
