@@ -1,4 +1,4 @@
-# Windows Toast Notification (BurntToast 기반)
+﻿# Windows Toast Notification (BurntToast 기반)
 # 호출: powershell.exe -File notify.ps1 stop|permission
 
 param([string]$Event = "stop")
